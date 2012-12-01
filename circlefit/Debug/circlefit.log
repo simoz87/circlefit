@@ -1,0 +1,27 @@
+﻿Compilazione avviata 29/11/2012 14:09:55.
+Progetto "\\VBOXSVR\condivisa_windows\circlefit-master (2)\circlefit\circlefit.vcxproj" sul nodo 2 (destinazioni: build).
+InitializeBuildStatus:
+  Aggiornamento timestamp di "Debug\circlefit.unsuccessfulbuild".
+ClCompile:
+  Tutti gli output sono aggiornati.
+ManifestResourceCompile:
+  Tutti gli output sono aggiornati.
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"\\VBOXSVR\condivisa_windows\circlefit-master (2)\Debug\circlefit.exe" /INCREMENTAL /NOLOGO ../libs/lapack.lib ../libs/blas.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\circlefit.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"\\VBOXSVR\condivisa_windows\circlefit-master (2)\Debug\circlefit.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"\\VBOXSVR\condivisa_windows\circlefit-master (2)\Debug\circlefit.lib" /MACHINE:X86 Debug\circlefit.exe.embed.manifest.res
+  Debug\CircleFitter.obj
+  Debug\main.obj
+  Debug\Point2Dvector.obj
+LINK : warning LNK4098: la libreria predefinita 'MSVCRT' è in conflitto con l'utilizzo di altre librerie; utilizzare /NODEFAULTLIB:libreria
+lapack.lib(ilaenv.obj) : error LNK2019: riferimento al simbolo esterno _s_cmp non risolto nella funzione _ilaenv_
+lapack.lib(ilaenv.obj) : error LNK2019: riferimento al simbolo esterno _s_copy non risolto nella funzione _ilaenv_
+lapack.lib(slamch.obj) : error LNK2019: riferimento al simbolo esterno _e_wsfe non risolto nella funzione _slamc2_
+lapack.lib(slamch.obj) : error LNK2019: riferimento al simbolo esterno _do_fio non risolto nella funzione _slamc2_
+lapack.lib(slamch.obj) : error LNK2019: riferimento al simbolo esterno _s_wsfe non risolto nella funzione _slamc2_
+lapack.lib(slamch.obj) : error LNK2019: riferimento al simbolo esterno _pow_ri non risolto nella funzione _slamc2_
+lapack.lib(iparmq.obj) : error LNK2019: riferimento al simbolo esterno _i_nint non risolto nella funzione _iparmq_
+\\VBOXSVR\condivisa_windows\circlefit-master (2)\Debug\circlefit.exe : fatal error LNK1120: 7 esterni non risolti
+Compilazione progetto "\\VBOXSVR\condivisa_windows\circlefit-master (2)\circlefit\circlefit.vcxproj" (destinazioni: build) NON COMPLETATA.
+
+Compilazione NON RIUSCITA.
+
+Tempo trascorso 00:00:03.64

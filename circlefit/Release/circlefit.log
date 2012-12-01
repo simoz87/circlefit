@@ -1,0 +1,25 @@
+﻿Compilazione avviata 01/12/2012 11:47:44.
+Progetto "\\VBOXSVR\condivisa_windows\circlefit-master (2)\circlefit\circlefit.vcxproj" sul nodo 2 (destinazioni: build).
+InitializeBuildStatus:
+  Creazione di "Release\circlefit.unsuccessfulbuild". È stato specificato "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt CircleFitter.cpp
+  CircleFitter.cpp
+CircleFitter.cpp(26): warning C4018: '<': errata corrispondenza tra signed e unsigned
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"\\VBOXSVR\condivisa_windows\circlefit-master (2)\Release\circlefit.exe" /INCREMENTAL:NO /NOLOGO ../libs/blas.lib ../libs/lapack.lib ../libs/libf2c.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\circlefit.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"\\VBOXSVR\condivisa_windows\circlefit-master (2)\Release\circlefit.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"\\VBOXSVR\condivisa_windows\circlefit-master (2)\Release\circlefit.lib" /MACHINE:X86 Release\CircleFitter.obj
+  Release\main.obj
+  Release\Point2Dvector.obj
+  Generazione codice in corso...
+  Generazione codice terminata
+  circlefit.vcxproj -> \\VBOXSVR\condivisa_windows\circlefit-master (2)\Release\circlefit.exe
+Manifest:
+  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"\\VBOXSVR\condivisa_windows\circlefit-master (2)\Release\circlefit.exe;#1" /manifest Release\circlefit.exe.intermediate.manifest
+FinalizeBuildStatus:
+  Eliminazione del file "Release\circlefit.unsuccessfulbuild" in corso.
+  Aggiornamento timestamp di "Release\circlefit.lastbuildstate".
+Compilazione progetto "\\VBOXSVR\condivisa_windows\circlefit-master (2)\circlefit\circlefit.vcxproj" (destinazioni: build) completata.
+
+Compilazione completata.
+
+Tempo trascorso 00:00:22.18
