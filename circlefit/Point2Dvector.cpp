@@ -1,10 +1,31 @@
 #include "Point2Dvector.h"
-
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <sstream>
+using namespace std;
 
 Point2Dvector::Point2Dvector(const std::string &filename)
 {
-  //TODO add code here to read the sampled 2D points from the out.txt file generated from matlab
-    //throw an error in case something goes wrong (file doesn't exist or error parsing it)
+	ifstream inputfile;
+	string line;
+	inputfile.open(filename);
+	if (inputfile.is_open()){
+		while (inputfile.good()){
+			float x, y;
+			getline (inputfile, line);
+			istringstream sline(line);
+			sline>>x>>y;
+			push_back (Point2D(x,y));
+
+		}
+		inputfile.close();
+	}
+	else{
+		string prova="File ";
+		prova.append(filename).append(" not found!");
+		throw runtime_error(prova);
+	}
 }
 
 

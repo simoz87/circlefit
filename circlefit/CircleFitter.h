@@ -2,6 +2,10 @@
 #include<ostream>
 #include<vector>
 #include "Point2D.h"
+#include "../libs/clapack.h"
+
+extern const double MIN_INC;
+extern const int MAX_ITER;
 
 class CircleFitter
 {
@@ -16,6 +20,9 @@ public:
   };
 
 protected:
+	float ddF[9];
+	float z[3];
+	float dF[3];
   //add here member variables that can be shared by different calls to the Run function 
 
 public:

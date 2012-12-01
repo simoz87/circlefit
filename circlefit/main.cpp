@@ -4,31 +4,12 @@
 #include "../libs/clapack.h"
 using namespace std;
 
-void solve_sample()
-{
-  //solves system
-  // x+y=10
-  // x-y=20
-  //see help @http://www.netlib.org/lapack/lug/node38.html
-  //see help @http://www.netlib.org/clapack/CLAPACK-3.1.1/SRC/sgetrs.c
-  long int info;
-  long int n =2;
-  long int one(1);
-  float a[]={ 1.0f, 1.0f, 1.0f, -1.0f};
-  float b[]={ 10.0f, 20.0f };
-  long int piv[2];
-  sgetrf_(&n,&n,a,&n,piv,&info);
-  cout<<info<<endl;
-  sgetrs_("N",&n,&one,a,&n,piv,b,&n,&info);
-  
-  cout<<info<<endl;
-  cout<<b[0]<<"\t"<<b[1]<<endl;
-}
+const double MIN_INC = 1e-9; 
+const int MAX_ITER = 100;
 
 //main function: accepts as input parameter a matlab file containing the points sampled on the circle
 int main(int argc, char* argv[])
 {
-  solve_sample();
   try
   {
     if(argc<2)
@@ -37,7 +18,7 @@ int main(int argc, char* argv[])
     string inputfilename=argv[1];
     
     Point2Dvector points(inputfilename);//read input points
-    
+
     CircleFitter cf;//initialize the circle fitter object
 
     CircleFitter::Circle fitted_circle=cf.Run(points);//solves the fitting problem
