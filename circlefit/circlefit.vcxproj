@@ -78,6 +78,7 @@
   <ItemGroup>
     <ClCompile Include="CircleFitter.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Point2D.cpp" />
     <ClCompile Include="Point2Dvector.cpp" />
   </ItemGroup>
   <ItemGroup>

@@ -4,8 +4,6 @@
 #include "../libs/clapack.h"
 using namespace std;
 
-const double MIN_INC = 1e-9; 
-const int MAX_ITER = 100;
 
 //main function: accepts as input parameter a matlab file containing the points sampled on the circle
 int main(int argc, char* argv[])
@@ -19,7 +17,8 @@ int main(int argc, char* argv[])
     
     Point2Dvector points(inputfilename);//read input points
 
-    CircleFitter cf;//initialize the circle fitter object
+	int maxIter=100;
+    CircleFitter cf (maxIter);//initialize the circle fitter object
 
     CircleFitter::Circle fitted_circle=cf.Run(points);//solves the fitting problem
 

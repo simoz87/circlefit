@@ -22,9 +22,9 @@ Point2Dvector::Point2Dvector(const std::string &filename)
 		inputfile.close();
 	}
 	else{
-		string prova="File ";
-		prova.append(filename).append(" not found!");
-		throw runtime_error(prova);
+		string msg="File ";
+		msg.append(filename).append(" not found!");
+		throw runtime_error(msg);
 	}
 }
 

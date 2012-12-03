@@ -4,8 +4,6 @@
 #include "Point2D.h"
 #include "../libs/clapack.h"
 
-extern const double MIN_INC;
-extern const int MAX_ITER;
 
 class CircleFitter
 {
@@ -20,15 +18,20 @@ public:
   };
 
 protected:
-	float ddF[9];
-	float z[3];
-	float dF[3];
+	float ddF_[9];
+	float z_[3];
+	float dF_[3];
+	int maxIter_;
   //add here member variables that can be shared by different calls to the Run function 
 
 public:
   
   CircleFitter(void);//initialize the object 
+  
+  CircleFitter(int maxIter);
 
+  void setMaxIter (int maxIter);
+  
   Circle Run(const std::vector<Point2D> &input);//returns the circle fitting the input sampled points
   
   ~CircleFitter(void);
